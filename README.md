@@ -20,7 +20,7 @@ Role Variables
 - ovh_kernel_image_systemmap_basename: 'System.map'
 - ovh_kernel_image_bzimage_basename: 'bzImage'
 - ovh_kernel_image_config_basename: 'config'
-``
+```
 
 Dependencies
 ------------
