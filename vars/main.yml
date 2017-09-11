@@ -1,0 +1,5 @@
+---
+# vars file for ovh-kernel
+ovh_kernel_image_systemmap_url: "{{ovh_kernel_image_baseurl}}/{{ovh_kernel_image_systemmap_basename}}-{{ovh_kernel_image_version}}-{{ovh_kernel_image_flavor}}"
+ovh_kernel_image_bzimage_url: "{{ovh_kernel_image_baseurl}}/{{ovh_kernel_image_bzimage_basename}}-{{ovh_kernel_image_version}}-{{ovh_kernel_image_flavor}}"
+ovh_kernel_image_config_url: "{{ovh_kernel_image_baseurl}}/{{ovh_kernel_image_config_basename}}-{{ovh_kernel_image_version}}-{{ovh_kernel_image_flavor}}"
