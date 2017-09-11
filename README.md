@@ -3,6 +3,8 @@ Role Name
 
 Install the targeted version of ovh kernel in your VPS or dedicated server.
 
+This has been tested only on debian, but should work with mosts of distros.
+
 Requirements
 ------------
 
