@@ -3,6 +3,8 @@ Role Name
 
 Install the targeted version of ovh kernel in your VPS or dedicated server.
 
+This has been tested only on debian, but should work with mosts of distros.
+
 Requirements
 ------------
 
@@ -18,7 +20,7 @@ Role Variables
 - ovh_kernel_image_systemmap_basename: 'System.map'
 - ovh_kernel_image_bzimage_basename: 'bzImage'
 - ovh_kernel_image_config_basename: 'config'
-``
+```
 
 Dependencies
 ------------
@@ -40,4 +42,4 @@ BSD
 Author Information
 ------------------
 
-[ webofmars | https://webofmars.com ] 2017
+[webofmars](https://webofmars.com) 2017
