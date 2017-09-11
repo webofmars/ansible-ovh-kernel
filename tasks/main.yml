@@ -1,0 +1,52 @@
+---
+# tasks file for ovh-kernel
+
+# warn the user
+- name: "Kernel System.map check"
+  debug:
+    msg: "will install: {{ovh_kernel_image_systemmap_url}}"
+
+- name: "Kernel bzImage check"
+  debug:
+    msg: "will install: {{ovh_kernel_image_bzimage_url}}"
+
+- name: "Kernel config check"
+  debug:
+    msg: "will install: {{ovh_kernel_image_config_url}}"
+
+- name: "Kernel install command check"
+  debug:
+    msg: "will run install command: {{ovh_kernel_image_install_command}}"
+
+# get the files
+# TODO: add checksums
+- name: "get System.map"
+  get_url:
+    url: "{{ovh_kernel_image_systemmap_url}}"
+    dest: /boot/
+    mode: 0440
+
+- name: "get bzImage"
+  get_url:
+    url: "{{ovh_kernel_image_bzimage_url}}"
+    dest: /boot/
+    mode: 0440
+
+- name: "get Config"
+  get_url:
+    url: "{{ovh_kernel_image_config_url}}"
+    dest: /boot/
+    mode: 0440
+
+# install the kernel
+- name: "install kernel with predefined command"
+  command: "{{ovh_kernel_image_install_command}}"
+  register: cmdout
+
+- name: "command output"
+  debug:
+    msg: "The command exited with the following output:\n {{cmdout}}"
+
+- name:
+  debug:
+    msg: "You should now reboot your server at a conveniant time for you !"
