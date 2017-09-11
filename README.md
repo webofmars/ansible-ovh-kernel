@@ -40,4 +40,4 @@ BSD
 Author Information
 ------------------
 
-[ webofmars | https://webofmars.com ] 2017
+[webofmars](https://webofmars.com) 2017
