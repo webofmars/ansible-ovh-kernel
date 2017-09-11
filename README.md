@@ -1,5 +1,5 @@
-Role Name
-=========
+webofmars.ovh-kernel
+====================
 
 Install the targeted version of ovh kernel in your VPS or dedicated server.
 
